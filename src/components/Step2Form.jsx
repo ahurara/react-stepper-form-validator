@@ -2,6 +2,8 @@ import React from 'react';
 import FormField from './FormField';
 import { Formik, useFormik } from "formik";
 import * as yup from "yup";
+import { CiLock } from "react-icons/ci";
+
 
 const Step2Form = ({handleNextStep}) => {
 
@@ -42,9 +44,8 @@ const Step2Form = ({handleNextStep}) => {
       
   return (
     <form onSubmit={formik.handleSubmit}>
-    <div className="flex flex-col items-center w-[fit-content] box-border">
-      <div className="flex flex-col items-center w-[fit-content] box-border">
-        <div className="m-[0_0_32px_0] flex flex-col items-center w-[fit-content] box-border">
+    <div className="flex flex-col items-center w-full box-border">
+        <div className="m-[0_0_32px_0] flex flex-col items-center w-full box-border">
           
           <FormField 
           type={'text'} 
@@ -99,18 +100,19 @@ const Step2Form = ({handleNextStep}) => {
             Send Request
           </span>
         </button>
-        <div className="m-[0_48.6px_0_45.8px] flex flex-row w-[fit-content] box-border">
-          <div className="m-[0.5px_9.4px_0.5px_0] flex box-border">
+
+        <div className="flex flex-row w-full box-border text-center gap-1">
+          <div className=" flex box-border">
             <span className="break-words font-['Font_Awesome_6_Pro','Roboto_Condensed'] font-light text-[16px] text-[#6B7280]">
-              lock
+            <CiLock />
             </span>
           </div>
           <span className="break-words font-['Lato'] font-normal text-[14px] leading-[1.429] text-[#6B7280]">
             We promise never to share your information or spam your inbox
           </span>
         </div>
+
       </div>
-    </div>
     </form>
   );
 };
