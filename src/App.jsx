@@ -69,12 +69,12 @@ function App() {
                     ultrices egestas.
                   </span>
                 </div>
-                <button onClick={()=>{setProgress(33);setStep(1)}} className="bg-[#019F44] relative flex justify-center items-center p-[15px_0_15px_1px] w-[160px] box-sizing-border">
+                <button onClick={()=>{setProgress(33);setStep(1)}} className="bg-[#019F44] relative flex justify-center items-center p-[15px_0_15px_1px] w-[160px] box-sizing-border mb-4">
                   <span className="break-words font-['Lato'] font-semibold text-[15px] text-[var(--grayscale-white,#FFFFFF)]">
                     Return Home
                   </span>
                 </button>
-                <span className="text-center break-words font-['Lato'] font-normal text-lg text-[#6B7280] ">
+                <span className="text-center break-words font-['Lato'] font-normal text-lg text-[#6B7280] mb-10 ">
                    Developed By Abu Hurara
                   </span>
               </div>

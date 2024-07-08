@@ -107,7 +107,7 @@ const Step2Form = ({handleNextStep}) => {
             <CiLock />
             </span>
           </div>
-          <span className="break-words font-['Lato'] font-normal text-[14px] leading-[1.429] text-[#6B7280]">
+          <span className="break-words font-['Lato'] font-normal text-[14px] leading-[1.429] text-[#6B7280] mb-10">
             We promise never to share your information or spam your inbox
           </span>
         </div>
