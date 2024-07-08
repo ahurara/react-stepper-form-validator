@@ -31,7 +31,7 @@ function App() {
       <div className="bg-[var(--grayscale-50,#F9FAFB)] flex flex-col items-center p-4 sm:p-8 lg:p-0 lg:w-auto box-border">
         <Header handlePreviousStep={handlePreviousStep} />
         <ProgressBar progress={progress} />
-        <div className="flex flex-col items-center w-96 box-border">
+        <div className="flex flex-col items-center w-[18rem] md:w-96 lg:w-96 box-border">
           {step === 1 && (
             <>
               <Question question="Step # 1" />

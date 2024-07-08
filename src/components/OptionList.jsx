@@ -13,7 +13,7 @@ const OptionsList = ({handleNextStep}) => {
   ];
 
   return (
-    <div className="flex flex-col items-center w-full box-border">
+    <div className="flex flex-col items-center w-full box-border ">
       {options.map((option, index) => (
         <Option key={index} text={option} handleNextStep={handleNextStep} />
       ))}

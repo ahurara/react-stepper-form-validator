@@ -53,11 +53,13 @@ const Step2Form = ({handleNextStep}) => {
             onChange ={formik.handleChange}
             error =   {formik.touched.fullName && formik.errors.fullName } 
           label="Name"  
-          width="w-full sm:w-[520px]"
+          width="w-fit md:w-full lg:w-full  "
            height="h-[48px]" />
 
-          <div className="m-[0_0_16px_0] flex flex-row w-[fit-content] box-border space-x-4">
+          <div className="m-[0_0_0px_0] flex flex-row w-[fit-content] box-border space-x-4">
+           <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
            
+            <div className='col-span-1 w-full'>
             <FormField 
             type={'email'}
             name = 'email'
@@ -66,9 +68,11 @@ const Step2Form = ({handleNextStep}) => {
             error =   {formik.touched.email && formik.errors.email } 
              placeholder="  sampleuser@gmail.com"
             label="Email" 
-            width="w-full sm:w-[252px]" 
+            width="w-full" 
             height="h-[48px]" />
+            </div>
 
+            <div className='col-span-1 w-full'>
             <FormField 
             type={'text'}
             name = 'phoneNumber'
@@ -77,14 +81,15 @@ const Step2Form = ({handleNextStep}) => {
             placeholder='  00000000000'
             error =   {formik.touched.phoneNumber && formik.errors.phoneNumber }  
             label="Phone Number" 
-            width="w-full sm:w-[252px]"
+            width="w-full "
              height="h-[48px]" />
-
+             </div>
+             </div>
           </div>
           <FormField
            type={'text'}
            label="Anything else you’d like to share?"
-            width="w-full sm:w-[520px]" 
+           width="w-fit md:w-full lg:w-full  "
             height="h-[112px]" />
 
         </div>
